@@ -1,5 +1,5 @@
 ---
-date: Enero 2023
+date: Agosto 2026
 title: Plantilla ![arc42](images/arc42-logo.png)
 ---
 
