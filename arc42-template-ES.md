@@ -145,13 +145,13 @@ Interfases importantes
 
 # Vista de Ejecución {#section-runtime-view}
 
-## \<Escenario de ejecución 1\> {#_escenario_de_ejecución_1}
+## Registrar Nuevo Producto {#_escenario_de_ejecución_1}
 
--   *\<Inserte un diagrama de ejecución o la descripción del
-    escenario\>*
+El siguiente diagrama muestra el flujo de interacción entre los contenedores del sistema al registrar un nuevo producto.
 
--   *\<Inserte la descripción de aspectos notables de las interacciones
-    entre los bloques de construcción mostrados en este diagrama.\>*
+![Diagrama de Secuencia](./images/sequence_registrar_producto.png)
+
+El usuario completa el formulario en la aplicación web, la cual envía una petición POST al servicio API. Este valida los datos, los persiste en la base de datos PostgreSQL y retorna el producto creado con su ID. Finalmente, la aplicación web actualiza el listado y notifica al usuario.
 
 ## \<Escenario de ejecución 2\> {#_escenario_de_ejecución_2}
 
@@ -221,10 +221,16 @@ Características de Calidad/Rendimiento
 
 # Glosario {#section-glossary}
 
-+----------------------+-----------------------------------------------+
-| Término              | Definición                                    |
-+======================+===============================================+
-| *\<Término-1\>*      | *\<definicion-1\>*                            |
-+----------------------+-----------------------------------------------+
-| *\<Término-2\>*      | *\<definicion-2\>*                            |
-+----------------------+-----------------------------------------------+
++----------------------+-----------------------------------------------------------------------+
+| Término              | Definición                                                             |
++======================+=========================================================================+
+| *Producto*           | *Bien o artículo que la empresa adquiere para su comercialización o uso interno.* |
++----------------------+-----------------------------------------------------------------------+
+| *Proveedor*          | *Entidad externa que suministra productos a la empresa.*              |
++----------------------+-----------------------------------------------------------------------+
+| *Orden de Compra*    | *Documento formal mediante el cual se solicita la adquisición de productos a un proveedor.* |
++----------------------+-----------------------------------------------------------------------+
+| *ERP*                | *Enterprise Resource Planning: sistema que integra los procesos de negocio de una empresa.* |
++----------------------+-----------------------------------------------------------------------+
+| *SPA*                | *Single-Page Application: aplicación web que carga una sola página HTML y actualiza su contenido dinámicamente.* |
++----------------------+-----------------------------------------------------------------------+
