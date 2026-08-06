@@ -38,15 +38,25 @@ Hruschka y Dr. Gernot Starke.
 
 # Restricciones de la Arquitectura {#section-architecture-constraints}
 
+El equipo de desarrollo ha definido las siguientes decisiones tecnológicas para la construcción del Sistema ERP:
+
+- El backend se desarrollará con **Java y Spring Boot**, dado su robustez y amplio soporte para aplicaciones empresariales.
+- La base de datos será **PostgreSQL**, por su confiabilidad y capacidades para el manejo de datos relacionales complejos.
+- El frontend se implementará como una **Single-Page Application (SPA) con React**, permitiendo una experiencia de usuario fluida.
+- La comunicación entre el frontend y el backend se realizará mediante una **API REST** con formato JSON.
+- El control de versiones y la documentación del proyecto se gestionarán a través de **GitHub**.
+- La gestión ágil del proyecto (backlog, historias de usuario y sprints) se realizará en **Jira**.
 # Alcance y Contexto del Sistema {#section-context-and-scope}
 
 ## Contexto de Negocio {#_contexto_de_negocio}
 
-**\<Diagrama o Tabla\>**
+El Sistema ERP centraliza los procesos de negocio de la empresa, permitiendo la gestión de compras, facturación, inventario, activos fijos, empleados y reportes ejecutivos. El siguiente diagrama muestra el sistema como una caja negra, junto con los actores y sistemas externos con los que interactúa.
 
-**\<optionally: Explanation of external domain interfaces\>**
+![Diagrama de Contexto](./images/c1_context.png)
 
 ## Contexto Técnico {#_contexto_técnico}
+
+El sistema se integra con una plataforma de contabilidad externa para el registro financiero y con una pasarela de pagos para la gestión de pagos a proveedores.
 
 **\<Diagrama o Tabla\>**
 
